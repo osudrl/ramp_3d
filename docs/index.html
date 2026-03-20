@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RAMP-3D grounds vision and language to 3D masks for long-horizon box rearrangement.">
+  <meta name="keywords" content="RAMP-3D, ICAPS 2026, 3D vision-language models, long-horizon planning, box rearrangement">
+  <meta property="og:title" content="RAMP-3D">
+  <meta property="og:description" content="Grounding Vision and Language to 3D Masks for Long-Horizon Box Rearrangement.">
+  <meta property="og:type" content="website">
+  <title>RAMP-3D | ICAPS 2026</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Noto+Sans:400,500,700"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" type="image/png" href="./resources/task_variant_1.png">
+</head>
+<body>
+
+<section class="hero paper-hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="has-text-centered">
+        <p class="eyebrow">ICAPS 2026</p>
+        <h1 class="title publication-title">Grounding Vision and Language to 3D Masks for Long-Horizon Box Rearrangement</h1>
+        <p class="subtitle publication-subtitle">Reactive Action Mask Planner (RAMP-3D)</p>
+
+        <div class="publication-authors">
+          <span class="author-block">Ashish Malik,</span>
+          <span class="author-block">Caleb Lowe,</span>
+          <span class="author-block">Aayam Shrestha,</span>
+          <span class="author-block">Stefan Lee,</span>
+          <span class="author-block">Fuxin Li,</span>
+          <span class="author-block">Alan Fern</span>
+        </div>
+
+        <div class="publication-links">
+          <span class="link-block">
+            <a href="./resources/ramp_3d_icaps_2026.pdf"
+               class="external-link button is-dark is-rounded is-medium">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>Paper</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="https://github.com/osudrl/ramp_3d"
+               class="external-link button is-dark is-rounded is-medium">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container is-max-desktop">
+    <div class="columns is-variable is-6">
+      <div class="column is-two-thirds">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content lead-copy">
+          <p>
+            We study long-horizon planning in 3D environments from under-specified natural-language goals using only visual observations, focusing on multi-step 3D box rearrangement tasks.
+          </p>
+          <p>
+            RAMP-3D formulates planning as sequential prediction of paired 3D masks: a <em>which-object</em> mask indicating what to pick and a <em>which-target-region</em> mask specifying where to place it. The system processes RGB-D observations and natural-language task specifications to reactively generate multi-step pick-and-place actions.
+          </p>
+          <p>
+            Across 11 task variants in warehouse-style environments with 1-30 boxes, RAMP-3D achieves a 79.5% long-horizon success rate and substantially outperforms 2D VLM-based baselines.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="summary-card">
+          <h3 class="title is-5">Key Points</h3>
+          <ul>
+            <li>Planning directly in 3D mask space</li>
+            <li>No symbolic planning layer</li>
+            <li>11 language-conditioned task variants</li>
+            <li>96.8% one-step validity</li>
+            <li>79.5% long-horizon success</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight alt-section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method Overview</h2>
+    <figure class="paper-figure">
+      <img src="./resources/method_overview.png" alt="Overview of the RAMP-3D architecture">
+      <figcaption>
+        RAMP-3D extends a 3D grounding model to predict paired pickup and putdown masks with a done head for iterative long-horizon planning.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Task Setting</h2>
+    <div class="columns is-multiline task-grid">
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <figure class="task-card">
+          <img src="./resources/task_variant_1.png" alt="Task variant example with stack height 2">
+          <figcaption>Create stacks of boxes up to a maximum height of 2.</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <figure class="task-card">
+          <img src="./resources/task_variant_2.png" alt="Task variant example with right-to-left stacking">
+          <figcaption>Create stacks up to height 3, stacking them from right to left.</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <figure class="task-card">
+          <img src="./resources/task_variant_3.png" alt="Task variant example with finish-stack-first constraint">
+          <figcaption>Complete one stack fully before starting another.</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half-tablet is-one-quarter-desktop">
+        <figure class="task-card">
+          <img src="./resources/task_variant_4.png" alt="Task variant example with no stacking and blue priority">
+          <figcaption>Place all boxes without stacking, prioritizing blue boxes first.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight alt-section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Results</h2>
+    <div class="columns is-variable is-6">
+      <div class="column">
+        <figure class="paper-figure">
+          <img src="./resources/plan_performance.png" alt="Long-horizon plan success rates">
+          <figcaption>
+            Long-horizon plan success across scene sizes and task variants. RAMP-3D reaches 79.5% in snap-to-target mode and 66.5% in free-form mode.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="columns is-variable is-5">
+      <div class="column">
+        <figure class="paper-figure compact-figure">
+          <img src="./resources/target_accuracy_clutter.png" alt="Target identification accuracy by clutter level">
+          <figcaption>Joint target identification remains strong as clutter increases.</figcaption>
+        </figure>
+      </div>
+      <div class="column">
+        <figure class="paper-figure compact-figure">
+          <img src="./resources/target_accuracy_difficulty.png" alt="Target identification difficulty by target type">
+          <figcaption>Placement cells are the hardest targets to localize accurately.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container is-max-desktop">
+    <div class="columns is-variable is-6">
+      <div class="column">
+        <h2 class="title is-3">Contributions</h2>
+        <div class="content">
+          <ul>
+            <li>Introduces long-horizon 3D rearrangement planning as paired grounded mask selection.</li>
+            <li>Builds a reactive 3D VLM planner by extending UniVLG with paired-action reasoning and termination prediction.</li>
+            <li>Provides a benchmark spanning 11 warehouse rearrangement task variants with diverse language constraints.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">BibTeX</h2>
+        <pre class="bibtex"><code>@inproceedings{malik2026ramp3d,
+  title={Grounding Vision and Language to 3D Masks for Long-Horizon Box Rearrangement},
+  author={Malik, Ashish and Lowe, Caleb and Shrestha, Aayam and Lee, Stefan and Li, Fuxin and Fern, Alan},
+  booktitle={Proceedings of the International Conference on Automated Planning and Scheduling (ICAPS)},
+  year={2026}
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

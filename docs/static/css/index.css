@@ -1,0 +1,166 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #17202a;
+  background: #f6f7f4;
+}
+
+.paper-hero {
+  background: linear-gradient(180deg, #eef4eb 0%, #f6f7f4 100%);
+  border-bottom: 1px solid #dbe4d5;
+}
+
+.eyebrow {
+  margin-bottom: 0.75rem;
+  color: #48613d;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.publication-title,
+.publication-subtitle,
+.publication-authors,
+.summary-card h3 {
+  font-family: 'Google Sans', sans-serif;
+}
+
+.publication-title {
+  max-width: 980px;
+  margin: 0 auto 1rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.publication-subtitle {
+  margin-bottom: 1.25rem;
+  color: #48613d;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.publication-authors {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.author-block {
+  display: inline-block;
+  margin: 0 0.2rem 0.35rem;
+}
+
+.publication-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.link-block a {
+  min-width: 138px;
+}
+
+.section-tight {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.alt-section {
+  background: #eef2ea;
+}
+
+.lead-copy p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.summary-card {
+  height: 100%;
+  padding: 1.4rem;
+  background: #ffffff;
+  border: 1px solid #dde5d7;
+  border-radius: 18px;
+  box-shadow: 0 16px 36px rgba(38, 54, 29, 0.06);
+}
+
+.summary-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.summary-card li {
+  margin-bottom: 0.5rem;
+}
+
+.paper-figure,
+.task-card {
+  margin: 0;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #dde5d7;
+  border-radius: 18px;
+  box-shadow: 0 16px 36px rgba(38, 54, 29, 0.06);
+}
+
+.paper-figure img,
+.task-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.paper-figure figcaption,
+.task-card figcaption {
+  margin-top: 0.9rem;
+  color: #4d5a4b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.compact-figure img {
+  background: #fff;
+}
+
+.task-grid .column {
+  display: flex;
+}
+
+.task-card {
+  width: 100%;
+}
+
+.content ul {
+  margin-left: 1.1rem;
+}
+
+.content li {
+  margin-bottom: 0.55rem;
+}
+
+.bibtex {
+  padding: 1rem 1.1rem;
+  background: #101512;
+  border-radius: 16px;
+  color: #ebf2e9;
+  overflow-x: auto;
+}
+
+.bibtex code {
+  color: inherit;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .section-tight {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .paper-figure,
+  .task-card,
+  .summary-card {
+    padding: 0.85rem;
+  }
+}
