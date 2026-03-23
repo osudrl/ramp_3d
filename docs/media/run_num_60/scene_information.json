@@ -1,0 +1,748 @@
+{
+  "utterance": "Create stacks of boxes up to height 2",
+  "camera_intrinsics": [
+    [
+      305.4163695204686,
+      0.0,
+      320.0,
+      0.0
+    ],
+    [
+      0.0,
+      305.41637878692075,
+      240.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "all_classes": {
+    "1": "floor",
+    "2": "box",
+    "3": "pallet",
+    "4": "cell",
+    "5": "shelf",
+    "6": "distractor"
+  },
+  "target_id": [
+    2,
+    4
+  ],
+  "target_instances": [
+    2002,
+    4001
+  ],
+  "current_env_relationships": {
+    "pallets": {
+      "p0": {
+        "id": "p0",
+        "prim_path": "/World/p0",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          2.2,
+          1.44
+        ],
+        "instance_id": 3000,
+        "yaw_deg": 90.0
+      },
+      "p1": {
+        "id": "p1",
+        "prim_path": "/World/p1",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          4.09,
+          2.75
+        ],
+        "instance_id": 3001,
+        "yaw_deg": 90.0
+      }
+    },
+    "boxes": {
+      "box_0": {
+        "id": "box_0",
+        "prim_path": "/World/box_0",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2000,
+        "center_xy": [
+          -2.04,
+          3.49
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_1": {
+        "id": "box_1",
+        "prim_path": "/World/box_1",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2001,
+        "center_xy": [
+          -3.94,
+          -3.15
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_2": {
+        "id": "box_2",
+        "prim_path": "/World/box_2",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2002,
+        "center_xy": [
+          -1.44,
+          -1.14
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_3": {
+        "id": "box_3",
+        "prim_path": "/World/box_3",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2003,
+        "center_xy": [
+          -5.15,
+          -1.69
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_4": {
+        "id": "box_4",
+        "prim_path": "/World/box_4",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2004,
+        "center_xy": [
+          1.67,
+          1.69
+        ],
+        "color": "red",
+        "top_z": 1.6800000000000002,
+        "occupied": false,
+        "on_top_of": "p0_r0_c0",
+        "under_box": null,
+        "pallet_id": "p0",
+        "cell_id": "p0_r0_c0",
+        "yaw_deg": 90.0
+      },
+      "box_5": {
+        "id": "box_5",
+        "prim_path": "/World/box_5",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2005,
+        "center_xy": [
+          -2.58,
+          -0.9
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_6": {
+        "id": "box_6",
+        "prim_path": "/World/box_6",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2006,
+        "center_xy": [
+          -4.37,
+          -2.21
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_7": {
+        "id": "box_7",
+        "prim_path": "/World/box_7",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2007,
+        "center_xy": [
+          -3.93,
+          -2.0
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_8": {
+        "id": "box_8",
+        "prim_path": "/World/box_8",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2008,
+        "center_xy": [
+          -3.11,
+          3.86
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_9": {
+        "id": "box_9",
+        "prim_path": "/World/box_9",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2009,
+        "center_xy": [
+          -4.33,
+          -3.92
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_10": {
+        "id": "box_10",
+        "prim_path": "/World/box_10",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2010,
+        "center_xy": [
+          -2.93,
+          -0.38
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_11": {
+        "id": "box_11",
+        "prim_path": "/World/box_11",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2011,
+        "center_xy": [
+          -3.84,
+          2.54
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_12": {
+        "id": "box_12",
+        "prim_path": "/World/box_12",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2012,
+        "center_xy": [
+          -3.55,
+          -2.53
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      }
+    },
+    "cells": {
+      "p0_r0_c0": {
+        "id": "p0_r0_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4000,
+        "center_xy": [
+          1.67,
+          1.69
+        ],
+        "box_id": "box_4",
+        "prim_path": "/World/p0/pallet_a1/c1",
+        "stack_height": 1,
+        "occupied": true,
+        "max_stack": 5
+      },
+      "p0_r0_c1": {
+        "id": "p0_r0_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4001,
+        "center_xy": [
+          1.67,
+          1.19
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c2",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r1_c0": {
+        "id": "p0_r1_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4002,
+        "center_xy": [
+          2.72,
+          1.19
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c3",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r1_c1": {
+        "id": "p0_r1_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4003,
+        "center_xy": [
+          2.72,
+          1.69
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c4",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r2_c0": {
+        "id": "p0_r2_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4004,
+        "center_xy": [
+          2.2,
+          1.19
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c5",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r2_c1": {
+        "id": "p0_r2_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 90.0,
+        "instance_id": 4005,
+        "center_xy": [
+          2.2,
+          1.69
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c6",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r0_c0": {
+        "id": "p1_r0_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4004,
+        "center_xy": [
+          3.57,
+          3.0
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c1",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r0_c1": {
+        "id": "p1_r0_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4005,
+        "center_xy": [
+          3.57,
+          2.49
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c2",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r1_c0": {
+        "id": "p1_r1_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4006,
+        "center_xy": [
+          4.61,
+          2.49
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c3",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r1_c1": {
+        "id": "p1_r1_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4007,
+        "center_xy": [
+          4.61,
+          3.0
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c4",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r2_c0": {
+        "id": "p1_r2_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4008,
+        "center_xy": [
+          4.09,
+          2.49
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c5",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r2_c1": {
+        "id": "p1_r2_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4009,
+        "center_xy": [
+          4.09,
+          3.0
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c6",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "s0_r0_c0": {
+        "id": "s0_r0_c0",
+        "pallet_id": "s0",
+        "yaw_deg": 0.0,
+        "instance_id": 4012,
+        "center_xy": [
+          4.0,
+          -3.01
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_1/c1",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r0_c1": {
+        "id": "s0_r0_c1",
+        "pallet_id": "s0",
+        "yaw_deg": 0.0,
+        "instance_id": 4013,
+        "center_xy": [
+          4.0,
+          -2.46
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_1/c2",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r0_c2": {
+        "id": "s0_r0_c2",
+        "pallet_id": "s0",
+        "yaw_deg": 0.0,
+        "instance_id": 4014,
+        "center_xy": [
+          4.0,
+          -3.01
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_1/c3",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r1_c0": {
+        "id": "s0_r1_c0",
+        "pallet_id": "s0",
+        "yaw_deg": 0.0,
+        "instance_id": 4015,
+        "center_xy": [
+          4.0,
+          -2.46
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_1/c4",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r0_c0": {
+        "id": "s1_r0_c0",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4016,
+        "center_xy": [
+          5.41,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c1/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r0_c1": {
+        "id": "s1_r0_c1",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4017,
+        "center_xy": [
+          4.86,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c2/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r0_c2": {
+        "id": "s1_r0_c2",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4018,
+        "center_xy": [
+          4.31,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c3/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r1_c0": {
+        "id": "s1_r1_c0",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4019,
+        "center_xy": [
+          5.41,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c4/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r1_c1": {
+        "id": "s1_r1_c1",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4020,
+        "center_xy": [
+          4.86,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c5/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s1_r1_c2": {
+        "id": "s1_r1_c2",
+        "pallet_id": "s1",
+        "yaw_deg": 90.0,
+        "instance_id": 4021,
+        "center_xy": [
+          4.31,
+          -3.73
+        ],
+        "box_id": null,
+        "prim_path": "/World/s1/Shelf_2/c6/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      }
+    },
+    "shelfs": {
+      "s0": {
+        "id": "s0",
+        "prim_path": "/World/s0",
+        "capacity": 4,
+        "top_z": 0.05,
+        "center_xy": [
+          4.0,
+          -2.73
+        ],
+        "instance_id": 5000,
+        "yaw_deg": 0.0
+      },
+      "s1": {
+        "id": "s1",
+        "prim_path": "/World/s1",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          4.86,
+          -3.73
+        ],
+        "instance_id": 5001,
+        "yaw_deg": 90.0
+      }
+    },
+    "props": {
+      "prop_0": {
+        "id": "prop_0",
+        "prim_path": "/World/prop_0",
+        "center_xy": [
+          -0.4900253558896419,
+          -1.7618533470169822
+        ],
+        "instance_id": 6000
+      },
+      "prop_1": {
+        "id": "prop_1",
+        "prim_path": "/World/prop_1",
+        "center_xy": [
+          -0.7390782911146352,
+          -5.324569973009477
+        ],
+        "instance_id": 6001
+      },
+      "prop_2": {
+        "id": "prop_2",
+        "prim_path": "/World/prop_2",
+        "center_xy": [
+          -2.7291195122702265,
+          2.095997544017945
+        ],
+        "instance_id": 6002
+      }
+    }
+  }
+}

@@ -1,0 +1,795 @@
+{
+  "utterance": "Create stacks of boxes up to height 3, avoiding stacking unless required",
+  "camera_intrinsics": [
+    [
+      305.4163695204686,
+      0.0,
+      320.0,
+      0.0
+    ],
+    [
+      0.0,
+      305.41637878692075,
+      240.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "all_classes": {
+    "1": "floor",
+    "2": "box",
+    "3": "pallet",
+    "4": "cell",
+    "5": "shelf",
+    "6": "distractor"
+  },
+  "target_id": [
+    2,
+    4
+  ],
+  "target_instances": [
+    2017,
+    4017
+  ],
+  "current_env_relationships": {
+    "pallets": {
+      "p0": {
+        "id": "p0",
+        "prim_path": "/World/p0",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          4.4,
+          2.87
+        ],
+        "instance_id": 3000,
+        "yaw_deg": 0.0
+      },
+      "p1": {
+        "id": "p1",
+        "prim_path": "/World/p1",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          5.46,
+          0.34
+        ],
+        "instance_id": 3001,
+        "yaw_deg": 90.0
+      }
+    },
+    "boxes": {
+      "box_0": {
+        "id": "box_0",
+        "prim_path": "/World/box_0",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2000,
+        "center_xy": [
+          -3.91,
+          -3.75
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_1": {
+        "id": "box_1",
+        "prim_path": "/World/box_1",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2001,
+        "center_xy": [
+          -5.21,
+          0.72
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_2": {
+        "id": "box_2",
+        "prim_path": "/World/box_2",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2002,
+        "center_xy": [
+          -5.41,
+          -0.71
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_3": {
+        "id": "box_3",
+        "prim_path": "/World/box_3",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2003,
+        "center_xy": [
+          4.15,
+          3.39
+        ],
+        "color": "blue",
+        "top_z": 1.6800000000000002,
+        "occupied": false,
+        "on_top_of": "p0_r0_c1",
+        "under_box": null,
+        "pallet_id": "p0",
+        "cell_id": "p0_r0_c1",
+        "yaw_deg": 0.0
+      },
+      "box_4": {
+        "id": "box_4",
+        "prim_path": "/World/box_4",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2004,
+        "center_xy": [
+          -4.93,
+          -0.04
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_5": {
+        "id": "box_5",
+        "prim_path": "/World/box_5",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2005,
+        "center_xy": [
+          -2.77,
+          -0.65
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_6": {
+        "id": "box_6",
+        "prim_path": "/World/box_6",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2006,
+        "center_xy": [
+          -2.87,
+          3.48
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_7": {
+        "id": "box_7",
+        "prim_path": "/World/box_7",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2007,
+        "center_xy": [
+          -4.1,
+          -2.85
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_8": {
+        "id": "box_8",
+        "prim_path": "/World/box_8",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2008,
+        "center_xy": [
+          -4.42,
+          0.41
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_9": {
+        "id": "box_9",
+        "prim_path": "/World/box_9",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2009,
+        "center_xy": [
+          -4.12,
+          -0.69
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_10": {
+        "id": "box_10",
+        "prim_path": "/World/box_10",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2010,
+        "center_xy": [
+          -3.88,
+          3.63
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_11": {
+        "id": "box_11",
+        "prim_path": "/World/box_11",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2011,
+        "center_xy": [
+          -2.39,
+          3.4
+        ],
+        "color": "blue",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_12": {
+        "id": "box_12",
+        "prim_path": "/World/box_12",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2012,
+        "center_xy": [
+          -2.16,
+          -1.72
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_13": {
+        "id": "box_13",
+        "prim_path": "/World/box_13",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2013,
+        "center_xy": [
+          -4.48,
+          -2.36
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_14": {
+        "id": "box_14",
+        "prim_path": "/World/box_14",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2014,
+        "center_xy": [
+          -4.71,
+          1.82
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_15": {
+        "id": "box_15",
+        "prim_path": "/World/box_15",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2015,
+        "center_xy": [
+          -5.4,
+          2.58
+        ],
+        "color": "yellow",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_16": {
+        "id": "box_16",
+        "prim_path": "/World/box_16",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2016,
+        "center_xy": [
+          -4.81,
+          -2.85
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      },
+      "box_17": {
+        "id": "box_17",
+        "prim_path": "/World/box_17",
+        "size_xyz": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "instance_id": 2017,
+        "center_xy": [
+          -1.94,
+          -2.53
+        ],
+        "color": "red",
+        "top_z": 1.05,
+        "occupied": false,
+        "on_top_of": null,
+        "under_box": null,
+        "pallet_id": null,
+        "cell_id": null,
+        "yaw_deg": 0.0
+      }
+    },
+    "cells": {
+      "p0_r0_c0": {
+        "id": "p0_r0_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4000,
+        "center_xy": [
+          4.66,
+          3.39
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c1",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r0_c1": {
+        "id": "p0_r0_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4001,
+        "center_xy": [
+          4.15,
+          3.39
+        ],
+        "box_id": "box_3",
+        "prim_path": "/World/p0/pallet_a1/c2",
+        "stack_height": 1,
+        "occupied": true,
+        "max_stack": 5
+      },
+      "p0_r1_c0": {
+        "id": "p0_r1_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4002,
+        "center_xy": [
+          4.15,
+          2.35
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c3",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r1_c1": {
+        "id": "p0_r1_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4003,
+        "center_xy": [
+          4.66,
+          2.35
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c4",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r2_c0": {
+        "id": "p0_r2_c0",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4004,
+        "center_xy": [
+          4.15,
+          2.87
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c5",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p0_r2_c1": {
+        "id": "p0_r2_c1",
+        "pallet_id": "p0",
+        "yaw_deg": 0.0,
+        "instance_id": 4005,
+        "center_xy": [
+          4.66,
+          2.87
+        ],
+        "box_id": null,
+        "prim_path": "/World/p0/pallet_a1/c6",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r0_c0": {
+        "id": "p1_r0_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4004,
+        "center_xy": [
+          4.94,
+          0.6
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c1",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r0_c1": {
+        "id": "p1_r0_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4005,
+        "center_xy": [
+          4.94,
+          0.09
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c2",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r1_c0": {
+        "id": "p1_r1_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4006,
+        "center_xy": [
+          5.98,
+          0.09
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c3",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r1_c1": {
+        "id": "p1_r1_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4007,
+        "center_xy": [
+          5.98,
+          0.6
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c4",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r2_c0": {
+        "id": "p1_r2_c0",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4008,
+        "center_xy": [
+          5.46,
+          0.09
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c5",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "p1_r2_c1": {
+        "id": "p1_r2_c1",
+        "pallet_id": "p1",
+        "yaw_deg": 90.0,
+        "instance_id": 4009,
+        "center_xy": [
+          5.46,
+          0.6
+        ],
+        "box_id": null,
+        "prim_path": "/World/p1/pallet_a1/c6",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 5
+      },
+      "s0_r0_c0": {
+        "id": "s0_r0_c0",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4012,
+        "center_xy": [
+          4.47,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c1/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r0_c1": {
+        "id": "s0_r0_c1",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4013,
+        "center_xy": [
+          3.92,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c2/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r0_c2": {
+        "id": "s0_r0_c2",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4014,
+        "center_xy": [
+          3.37,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c3/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r1_c0": {
+        "id": "s0_r1_c0",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4015,
+        "center_xy": [
+          4.47,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c4/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r1_c1": {
+        "id": "s0_r1_c1",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4016,
+        "center_xy": [
+          3.92,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c5/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      },
+      "s0_r1_c2": {
+        "id": "s0_r1_c2",
+        "pallet_id": "s0",
+        "yaw_deg": 90.0,
+        "instance_id": 4017,
+        "center_xy": [
+          3.37,
+          -3.29
+        ],
+        "box_id": null,
+        "prim_path": "/World/s0/Shelf_2/c6/pallet_cell",
+        "stack_height": 0,
+        "occupied": false,
+        "max_stack": 1
+      }
+    },
+    "shelfs": {
+      "s0": {
+        "id": "s0",
+        "prim_path": "/World/s0",
+        "capacity": 6,
+        "top_z": 0.05,
+        "center_xy": [
+          3.92,
+          -3.29
+        ],
+        "instance_id": 5000,
+        "yaw_deg": 90.0
+      }
+    },
+    "props": {
+      "prop_0": {
+        "id": "prop_0",
+        "prim_path": "/World/prop_0",
+        "center_xy": [
+          -1.222116291162783,
+          2.473095499745722
+        ],
+        "instance_id": 6000
+      },
+      "prop_1": {
+        "id": "prop_1",
+        "prim_path": "/World/prop_1",
+        "center_xy": [
+          -0.4964461908066182,
+          -1.2120091749279451
+        ],
+        "instance_id": 6001
+      },
+      "prop_2": {
+        "id": "prop_2",
+        "prim_path": "/World/prop_2",
+        "center_xy": [
+          -2.20629132461261,
+          -4.199375982479677
+        ],
+        "instance_id": 6002
+      },
+      "prop_3": {
+        "id": "prop_3",
+        "prim_path": "/World/prop_3",
+        "center_xy": [
+          -0.3014696528895704,
+          -3.813637515331151
+        ],
+        "instance_id": 6003
+      }
+    }
+  }
+}
