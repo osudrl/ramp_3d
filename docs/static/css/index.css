@@ -209,6 +209,29 @@ body {
   display: none;
 }
 
+.episode-preview {
+  margin: 1rem 0 0;
+  padding: 0.85rem;
+  background: #f9fbf7;
+  border: 1px solid #d8e2d0;
+  border-radius: 16px;
+}
+
+.episode-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #d9e4d1;
+  background: #ffffff;
+}
+
+.episode-preview figcaption {
+  margin-top: 0.65rem;
+  color: #4f5f4b;
+  font-size: 0.88rem;
+}
+
 .episode-strip,
 .episode-carousel {
   display: flex;
